@@ -47,11 +47,6 @@ button {
   height: 1rem;
 }
 
-.selected-button {
-  color: white;
-  background-color: var(--medium-grey);
-}
-
 /* Fontstyle */
 .heading {
   margin-top: 1.875rem;
@@ -141,6 +136,11 @@ button {
   justify-content: center;
   background-color: var(--blue);
   border-radius: 25px;
+}
+
+.selected-button {
+  color: white;
+  background-color: var(--medium-grey);
 }
 
 @media only screen and (max-width:425px) {
