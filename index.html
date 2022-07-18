@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Website Data Info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Website Title -->
+    <title>Interactive Card</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Javascript -->
+    <script src="index.js" charset="utf-8" defer></script>
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <section class="card before-submit">
+      <div class="circle-container">
+        <img class="star-logo" src="images/icon-star.svg" alt="star-logo">
+      </div>
+      <h1 class="heading">How did we do ?</h1>
+      <p class="sub-heading">
+        Please let us know how we did with your support request. All feedback
+        is appreciated to help us improve our offering!
+      </p>
+      <div class="rate-us">
+        <button class="rate-btn circle-container">
+          1
+        </button>
+        <button class="rate-btn circle-container">
+          2
+        </button>
+        <button class="rate-btn circle-container">
+          3
+        </button>
+        <button class="rate-btn circle-container">
+          4
+        </button>
+        <button class="rate-btn circle-container">
+          5
+        </button>
+      </div>
+      <button class="submit-btn" type="button" name="button">submit</button>
+    </section>
+
+    <section class="card after-submit">
+      <img class="thankyou-image" src="images/illustration-thank-you.svg" alt="thankyou for giving rate">
+      <article class="result">
+        <h2 class="hidden">None</h2>
+        <p class="rate-text">You selected 5 out of 5</p>
+      </article>
+      <h1 class="heading">Thank you!</h1>
+      <p class="sub-heading">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+/* Universal Styling */
+:root {
+  --orange : hsl(25, 97%, 53%);
+  --white : hsl(0, 0%, 100%);
+  --light-grey : hsl(217, 12%, 63%);
+  --medium-grey : hsl(216, 12%, 54%);
+  --blue : hsl(213, 19%, 18%);
+  --dark-blue : hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  background-color: var(--dark-blue);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.93rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.circle-container {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: 100%;
+}
+
+.star-logo {
+  width: 1rem;
+  height: 1rem;
+}
+
+.selected-button {
+  color: white;
+  background-color: var(--medium-grey);
+}
+
+/* Fontstyle */
+.heading {
+  margin-top: 1.875rem;
+  margin-bottom: 0.93rem;
+  font-size: 1.75rem;
+  color: var(--white);
+}
+
+.sub-heading {
+  line-height: 24px;
+  color: var(--light-grey);
+}
+
+.rate-text {
+  font-size: 0.93rem;
+  color: var(--orange);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Main Card (Before Submission) */
+.card {
+  width: 25.75rem;
+  height: 416px;
+  padding: 2%;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  border-radius: 30px;
+}
+
+/* Rating Section */
+.rate-us {
+  margin: 1.5rem auto 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate-btn {
+  font-weight: bold;
+  color: var(--medium-grey);
+  border-style: none;
+  transition-property: background;
+  transition-duration: 300ms;
+}
+
+.rate-btn:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+/* Submit Button Section */
+.submit-btn {
+  width: 100%;
+  height: 3rem;
+  display: block;
+  font-size: 0.93rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 25px;
+}
+
+.submit-btn:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+/* Main Card (After Submission) */
+.after-submit {
+  padding: 2.81rem 2.5rem;
+  display: none;
+  text-align: center;
+}
+
+.thankyou-image {
+  margin-bottom: 2rem;
+}
+
+.result {
+  width: 193px;
+  height: 2rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  border-radius: 25px;
+}
+
+@media only screen and (max-width:425px) {
+  body {
+    padding: 0 5%;
+  }
+}
