@@ -35,7 +35,7 @@ Card on Mobile \
 ### Links
 
 - Solution URL: https://github.com/Biggboss7/Rating-Card/
-- Live Site URL: https://biggboss7.github.io/Rating-Card/
+- Live Site URL: https://glittery-gumdrop-b3a3a0.netlify.app
 
 ### Built with
 
