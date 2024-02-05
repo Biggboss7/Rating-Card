@@ -2,59 +2,67 @@
 <html lang="en">
   <head>
     <!-- Website Data Info -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!-- Website Title -->
-    <title>Interactive Card</title>
+    <title>Frontend Mentor Challlenge || Interactive Rating Card</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
     <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Javascript -->
-    <script src="index.js" charset="utf-8" defer></script>
+    <script src="index.js" defer></script>
     <!-- Font Style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <section class="card before-submit">
-      <div class="circle-container">
-        <img class="star-logo" src="images/icon-star.svg" alt="star-logo">
+    <form class="card__container">
+      <div class="image__container circle">
+        <img class="logo--star" src="images/icon-star.svg" alt="star logo" />
       </div>
       <h1 class="heading">How did we do ?</h1>
       <p class="sub-heading">
-        Please let us know how we did with your support request. All feedback
-        is appreciated to help us improve our offering!
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
       </p>
-      <div class="rate-us">
-        <button class="rate-btn circle-container">
-          1
-        </button>
-        <button class="rate-btn circle-container">
-          2
-        </button>
-        <button class="rate-btn circle-container">
-          3
-        </button>
-        <button class="rate-btn circle-container">
-          4
-        </button>
-        <button class="rate-btn circle-container">
-          5
-        </button>
-      </div>
-      <button class="submit-btn" type="button" name="button">submit</button>
-    </section>
+      <ul class="btn--rate__container">
+        <li>
+          <button class="btn btn--rate circle" value="1">1</button>
+        </li>
+        <li>
+          <button class="btn btn--rate circle" value="2">2</button>
+        </li>
+        <li>
+          <button class="btn btn--rate circle" value="3">3</button>
+        </li>
+        <li>
+          <button class="btn btn--rate circle" value="4">4</button>
+        </li>
+        <li>
+          <button class="btn btn--rate circle" value="5">5</button>
+        </li>
+      </ul>
+      <button class="btn btn--submit" type="button" name="button">
+        submit
+      </button>
+    </form>
 
-    <section class="card after-submit">
-      <img class="thankyou-image" src="images/illustration-thank-you.svg" alt="thankyou for giving rate">
-      <article class="result">
-        <h2 class="hidden">None</h2>
+    <section class="card__container feedback--card">
+      <img
+        class="thankyou-image"
+        src="images/illustration-thank-you.svg"
+        alt="thankyou for giving rate"
+      />
+      <article class="result__container">
         <p class="rate-text">You selected 5 out of 5</p>
       </article>
-      <h1 class="heading">Thank you!</h1>
+      <h2 class="heading">Thank you!</h2>
       <p class="sub-heading">
         We appreciate you taking the time to give a rating. If you ever need
         more support, don’t hesitate to get in touch!

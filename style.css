@@ -1,21 +1,23 @@
 /* Universal Styling */
 :root {
-  --orange : hsl(25, 97%, 53%);
-  --white : hsl(0, 0%, 100%);
-  --light-grey : hsl(217, 12%, 63%);
-  --medium-grey : hsl(216, 12%, 54%);
-  --blue : hsl(213, 19%, 18%);
-  --dark-blue : hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --blue: hsl(213, 19%, 18%);
+  --dark-blue: hsl(216, 12%, 8%);
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   font-size: 16px;
   background-color: var(--dark-blue);
 }
@@ -28,26 +30,11 @@ body {
   font-size: 0.93rem;
 }
 
-button {
-  cursor: pointer;
+ul {
+  list-style: none;
 }
 
-.circle-container {
-  width: 3rem;
-  height: 3rem;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--blue);
-  border-radius: 100%;
-}
-
-.star-logo {
-  width: 1rem;
-  height: 1rem;
-}
-
-/* Fontstyle */
+/* Fonts */
 .heading {
   margin-top: 1.875rem;
   margin-bottom: 0.93rem;
@@ -65,61 +52,78 @@ button {
   color: var(--orange);
 }
 
+/* Utility Class */
+.card__container {
+  width: 25.75rem;
+  height: 416px;
+  padding: 2%;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 30px;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: 100%;
+}
+
 .hidden {
   display: none;
 }
 
-/* Main Card (Before Submission) */
-.card {
-  width: 25.75rem;
-  height: 416px;
-  padding: 2%;
-  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
-  border-radius: 30px;
-}
-
-/* Rating Section */
-.rate-us {
+/* Button Rating Customization */
+.btn--rate__container {
   margin: 1.5rem auto 2rem;
   display: flex;
   justify-content: space-between;
 }
 
-.rate-btn {
+.btn {
   font-weight: bold;
-  color: var(--medium-grey);
+  text-transform: uppercase;
   border-style: none;
-  transition-property: background;
+  cursor: pointer;
+  transition-property: background transform;
   transition-duration: 300ms;
 }
 
-.rate-btn:hover {
-  color: var(--white);
-  background-color: var(--orange);
+.btn--rate {
+  color: var(--medium-grey);
 }
 
-/* Submit Button Section */
-.submit-btn {
+.btn--rate:hover {
+  color: var(--white);
+  background-color: var(--orange);
+  transform: scale(1.2);
+}
+
+.btn--submit {
   width: 100%;
   height: 3rem;
   display: block;
   font-size: 0.93rem;
   letter-spacing: 3px;
-  text-transform: uppercase;
   color: var(--white);
   background-color: var(--orange);
   border-radius: 25px;
 }
 
-.submit-btn:hover {
+.btn--submit:hover {
   color: var(--orange);
   background-color: var(--white);
 }
 
 /* Main Card (After Submission) */
-.after-submit {
+.feedback--card {
   padding: 2.81rem 2.5rem;
-  display: none;
   text-align: center;
 }
 
@@ -127,7 +131,7 @@ button {
   margin-bottom: 2rem;
 }
 
-.result {
+.result__container {
   width: 193px;
   height: 2rem;
   margin: 0 auto;
@@ -143,7 +147,7 @@ button {
   background-color: var(--medium-grey);
 }
 
-@media only screen and (max-width:425px) {
+@media only screen and (max-width: 425px) {
   body {
     padding: 0 5%;
   }
