@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <form class="card__container">
+    <form id="ratingForm" class="card__container">
       <div class="image__container circle">
         <img class="logo--star" src="images/icon-star.svg" alt="star logo" />
       </div>
@@ -31,36 +31,46 @@
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <ul class="btn--rate__container">
-        <li>
-          <button class="btn btn--rate circle" value="1">1</button>
-        </li>
-        <li>
-          <button class="btn btn--rate circle" value="2">2</button>
-        </li>
-        <li>
-          <button class="btn btn--rate circle" value="3">3</button>
-        </li>
-        <li>
-          <button class="btn btn--rate circle" value="4">4</button>
-        </li>
-        <li>
-          <button class="btn btn--rate circle" value="5">5</button>
-        </li>
-      </ul>
-      <button class="btn btn--submit" type="button" name="button">
-        submit
-      </button>
+      <div class="input--rates__container">
+        <label for="val-1" class="input--rate circle">
+          1
+          <input type="radio" id="val-1" name="rate" value="1" />
+        </label>
+
+        <label class="input--rate circle" for="val-2">
+          2
+          <input id="val-2" type="radio" name="rate" value="2" />
+        </label>
+
+        <label class="input--rate circle" for="val-3">
+          3
+          <input id="val-3" type="radio" name="rate" value="3" />
+        </label>
+
+        <label class="input--rate circle" for="val-4">
+          4
+          <input id="val-4" type="radio" name="rate" value="4" />
+        </label>
+
+        <label class="input--rate circle" for="val-5">
+          5
+          <input id="val-5" type="radio" name="rate" value="5" />
+        </label>
+      </div>
+
+      <button class="btn btn--submit">submit</button>
     </form>
 
-    <section class="card__container feedback--card">
+    <section class="card__container feedback--card hidden">
       <img
         class="thankyou-image"
         src="images/illustration-thank-you.svg"
         alt="thankyou for giving rate"
       />
       <article class="result__container">
-        <p class="rate-text">You selected 5 out of 5</p>
+        <p class="rate-content">
+          You selected <span id="rateGiven"></span> out of 5
+        </p>
       </article>
       <h2 class="heading">Thank you!</h2>
       <p class="sub-heading">

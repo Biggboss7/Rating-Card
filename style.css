@@ -47,7 +47,7 @@ ul {
   color: var(--light-grey);
 }
 
-.rate-text {
+.rate-content {
   font-size: 0.93rem;
   color: var(--orange);
 }
@@ -79,30 +79,45 @@ ul {
   display: none;
 }
 
-/* Button Rating Customization */
-.btn--rate__container {
-  margin: 1.5rem auto 2rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn {
+/* Input Radio Customization */
+.btn,
+.input--rate {
   font-weight: bold;
-  text-transform: uppercase;
-  border-style: none;
   cursor: pointer;
   transition-property: background transform;
   transition-duration: 300ms;
 }
 
-.btn--rate {
+.input--rates__container {
+  margin: 1.5rem auto 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input--rate {
   color: var(--medium-grey);
 }
 
-.btn--rate:hover {
+.input--rate:hover {
   color: var(--white);
   background-color: var(--orange);
   transform: scale(1.2);
+}
+
+.input--rate.selected {
+  color: white;
+  background-color: var(--medium-grey);
+}
+
+input[type="radio"] {
+  appearance: none;
+  position: absolute;
+  top: 999px;
+}
+
+.btn {
+  text-transform: uppercase;
+  border-style: none;
 }
 
 .btn--submit {
@@ -114,6 +129,10 @@ ul {
   color: var(--white);
   background-color: var(--orange);
   border-radius: 25px;
+}
+
+.btn--submit:focus {
+  outline: none;
 }
 
 .btn--submit:hover {
@@ -140,11 +159,6 @@ ul {
   justify-content: center;
   background-color: var(--blue);
   border-radius: 25px;
-}
-
-.selected-button {
-  color: white;
-  background-color: var(--medium-grey);
 }
 
 @media only screen and (max-width: 425px) {
