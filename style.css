@@ -80,45 +80,65 @@ ul {
   display: none;
 }
 
-/* Input Radio Customization */
-.btn,
-.input--rate {
-  font-weight: bold;
-  cursor: pointer;
-  transition-property: background transform;
-  transition-duration: 300ms;
-}
-
 .input--rates__container {
   margin: 1.5rem auto 2rem;
   display: flex;
   justify-content: space-between;
 }
 
-.input--rate {
-  color: var(--medium-grey);
+.radio__component {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  border-radius: 100%;
 }
 
-.input--rate:hover {
+.radio__component label {
+  font-weight: bold;
+  color: var(--medium-grey);
+  position: inherit;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn,
+input[type="radio"] {
+  cursor: pointer;
+  transition-property: background transform;
+  transition-duration: 300ms;
+}
+
+.btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: inherit;
+  background-color: inherit;
+  z-index: 5;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--medium-grey);
+}
+
+input[type="radio"]:hover {
   color: var(--white);
   background-color: var(--orange);
   transform: scale(1.2);
 }
 
-.input--rate.selected {
+input[type="radio"]:hover + label,
+input[type="radio"]:checked + label {
   color: white;
-  background-color: var(--medium-grey);
-}
-
-input[type="radio"] {
-  appearance: none;
-  position: absolute;
-  top: 999px;
-}
-
-.btn {
-  text-transform: uppercase;
-  border-style: none;
 }
 
 .btn--submit {

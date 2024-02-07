@@ -85,4 +85,4 @@ const ratingApp = {
   },
 };
 
-ratingApp.init();
+// ratingApp.init();
