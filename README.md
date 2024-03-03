@@ -23,6 +23,7 @@ Users should be able to:
 - See the "Thank you" card state after submitting a rating
 
 ### Screenshot
+
 Card Before Submit \
 ![before](https://user-images.githubusercontent.com/105411073/179646880-ece004a4-b625-45ea-b01d-99cae1c9b7bf.png)
 
@@ -35,7 +36,7 @@ Card on Mobile \
 ### Links
 
 - Solution URL: https://github.com/Biggboss7/Rating-Card/
-- Live Site URL: https://glittery-gumdrop-b3a3a0.netlify.app
+- Live Site URL: https://rating-card-biggboss7.netlify.app/
 
 ### Built with
 
@@ -50,4 +51,5 @@ Card on Mobile \
 2. Enhance problem solving skill
 
 ##Author
+
 - Github [Michael Tze] - https://github.com/Biggboss7
