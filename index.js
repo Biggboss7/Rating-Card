@@ -6,6 +6,7 @@ const feedbackCardEl = document.querySelector(".feedback--card");
 const rateGivenEl = document.getElementById("rateGiven");
 const inputRateContainer = document.querySelector(".input--rates__container");
 const submitButton = document.querySelector(".btn--submit");
+const errorMessage = "Please help us to improve by giving a rate... 🙏";
 
 const ratingApp = {
   currSelectedRateBtn: null,
@@ -24,7 +25,7 @@ const ratingApp = {
     e.preventDefault();
 
     if (!this.currSelectedRateBtn) {
-      alert("Please help us to improve by giving a rate... 🙏");
+      alert(errorMessage);
       return;
     }
 
